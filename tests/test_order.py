@@ -66,3 +66,11 @@ def test_cannot_confirm_twice():
     with pytest.raises(ValueError, match="already confirmed"):
         order.confirm()
 
+
+def test_fallo_controlado_ci():
+    """
+    Prueba temporal para demostrar que GitHub Actions
+    detecta correctamente un error.
+    """
+    assert 1 == 2
+
