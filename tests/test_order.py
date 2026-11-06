@@ -67,12 +67,4 @@ def test_cannot_confirm_twice():
         order.confirm()
 
 
-def test_fallo_controlado_ci():
-    """
-    Prueba temporal para comprobar que GitHub Actions
-    detecta una prueba automatizada fallida.
-    """
-    resultado_esperado = 2
-    resultado_obtenido = 1
 
-    assert resultado_obtenido == resultado_esperado
