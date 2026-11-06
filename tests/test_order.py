@@ -69,8 +69,10 @@ def test_cannot_confirm_twice():
 
 def test_fallo_controlado_ci():
     """
-    Prueba temporal para demostrar que GitHub Actions
-    detecta correctamente un error.
+    Prueba temporal para comprobar que GitHub Actions
+    detecta una prueba automatizada fallida.
     """
-    assert 1 == 2
+    resultado_esperado = 2
+    resultado_obtenido = 1
 
+    assert resultado_obtenido == resultado_esperado
